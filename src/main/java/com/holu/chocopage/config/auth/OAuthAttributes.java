@@ -9,12 +9,12 @@ import java.util.Map;
 
 @Getter
 public class OAuthAttributes {
-    private Map<String, Object> attributes;
-    private String nameAttributeKey;
-    private String id;
-    private String name;
-    private String email;
-    private String profileImage;
+    private final Map<String, Object> attributes;
+    private final String nameAttributeKey;
+    private final String id;
+    private final String name;
+    private final String email;
+    private final String profileImage;
 
     @Builder
     public OAuthAttributes(String id, Map<String, Object> attributes, String nameAttributeKey, String name, String email, String profileImage) {
